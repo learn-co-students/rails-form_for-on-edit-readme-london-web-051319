@@ -1,3 +1,5 @@
+<h1>All Posts</h1>
+
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div><%= post.title %> &emsp; <%= link_to 'View Post', post_path(post) %></div> <br><br>
 <% end %>
